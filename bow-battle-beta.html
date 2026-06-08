@@ -14,6 +14,7 @@
     .segmented a{display:inline-block;padding:8px 12px;text-decoration:none;color:inherit}
     .segmented a.active{background:#2563eb;color:#fff}
     main{border:1px solid #e6e6e6;border-radius:8px;padding:20px;min-height:180px}
+    .btn{background:#10b981;color:#fff;border:0;padding:10px 14px;border-radius:6px;cursor:pointer}
   </style>
 </head>
 <body>
@@ -32,8 +33,15 @@
   </header>
 
   <main>
-    <h2>Bow Battle</h2>
-    <p>Soon You Will Be able To Play The Bow Battle Beta's Here</p>
+    <h2>Bow Battle Beta</h2>
+    <p>This is the Bow Battle Beta Page Press the button to play bow Battle</p>
+    <div style="margin-top:16px;">
+      <button id="actionBtn" class="btn">Play</button>
+    </div>
   </main>
-</body>
-</html>
+
+<script>
+  document.getElementById('actionBtn').addEventListener('click', () => {
+    window.location.href = 'https://www.lunar-studio.dev/bow-battle/index.html';
+  });
+</script>
